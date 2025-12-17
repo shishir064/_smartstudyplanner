@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./output.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#E7F0FF] text-[#0B132B] ">
+  <header class="bg-[#3a86ff] text-white sticky z-10 top-0">
+    <nav class="flex container mx-auto justify-between items-center px-4 py-6 ">
+      <h1 class=" text-1xl md:text-3x1
+      lg:text-4xl font-bold">
+        <a href="#home"> Smart Study Planner</a>
+      </h1>
+
+      <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
+        <li class="hover:text-[#e3d9d9]"><a href="home.php">Home</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="dashboard.php">Dashboard</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="about_us.php">About</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="contact.php">Contact Us</a></li>
+        <button>
+          <i class="ri-moon-fill"></i>
+        </button>
+      </ul>
+      <button class="md:hidden">manu</button>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-15">
+    <!-- grid layout -->
+    <div class=" md:grid md:grid-cols-1 md:lg:grid-cols-3 md:px-10 md:py-4">
+      <!-- left contain -->
+      <div class="hidden md:block md:py-4 lg:col-span-2 ">
+        <div class=" w-[40%]">
+          <h1 class="text-5xl font-medium py-4  ">Contact Us</h1>
+          <p class="text-[#6a6767]">Email,call, or complete the form to learn how Smart Study Planner can solve your
+            messaging problem.</p>
+          <p class="py-2 text-[#6a6767]">info@smart.com</p>
+          <p class="text-[#6a6767]">9800000000</p>
+        </div>
+
+        <div class="grid max-w-3xl  grid-cols-1 md:grid-cols-3 gap-8  mt-20">
+          <div class="">
+            <h2 class="font-medium">Customer Support</h2>
+            <p class="text-[#6a6767] text-[0.8rem] pt-4">Our support team is available around the clock to address any
+              concerns or queries you may have.</p>
+          </div>
+          <div>
+            <h2 class="font-medium">Feedback and Suggestions</h2>
+            <p class="text-[#6a6767]  text-[0.8rem] pt-4">We value your feedback and are continuously working to improve
+              Smart Study Planner. Your input is crucial in shaping the future of Planner</p>
+          </div>
+          <div>
+            <h2 class="font-medium">Media inquiries</h2>
+            <p class="text-[#6a6767]  text-[0.8rem] pt-4">For media-related questions or press inquiries, please contact
+              us at planner@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- right contain -->
+      <div class="mx-auto flex justify-center font-medium text-5xl mb-5 md:hidden">Contact Us</div>
+      <div class="w-full">
+        <div class="bg-white rounded-xl mx-auto max-w-xl md:max-w-2xl px-6 py-10">
+          <form action="" class="space-y-4">
+
+            <div>
+              <h1 class="text-4xl font-semibold">Get in Touch</h1>
+              <span class="text-gray-600">You can reach us anytime</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" class="border rounded-2xl p-2 w-full" placeholder="First name">
+              <input type="text" class="border rounded-2xl p-2 w-full" placeholder="Last name">
+            </div>
+
+            <div class="flex items-center border rounded-2xl p-2 gap-2 w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                fill="rgba(118,117,117,0.43)">
+                <path
+                  d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z" />
+              </svg>
+              <input type="email" class="outline-none w-full" placeholder="Your email">
+            </div>
+
+            <input type="tel" maxlength="10" class="border rounded-2xl p-2 w-full" placeholder="Your Number">
+
+            <textarea name="message" class="resize-none border rounded-2xl p-2 w-full h-32"
+              placeholder="How can we help?">
+            </textarea>
+
+            <button type="submit"
+              class="bg-[#3a86ff] text-white px-4 py-2 rounded-2xl hover:bg-[#4380e3] cursor-pointer w-full text-center">
+              Submit
+            </button>
+
+          </form>
+          
+          <div class="w-full flex justify-center items-center">
+            <p class="px-4 sm:px-8 text-gray-600 text-sm sm:text-base text-center sm:text-left max-w-md">
+              By contacting us, you agree to our
+              <span class="font-bold text-black">Terms and Service</span> and
+              <span class="font-bold text-black">Privacy Policy</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>

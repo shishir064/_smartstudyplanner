@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#dee0dc] text-[#0B132B]  ">
+    <header class="bg-[#3a86ff] text-white ">
+        <nav class="flex container mx-auto justify-between items-center px-6 py-4 ">
+            <h1 class=" text-1xl md:text-3x1 lg:text-4xl font-bold">
+                <a href="#home"> Smart Study Planner</a>
+            </h1>
+
+            <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
+                <li class="hover:text-[#e3d9d9]"><a href="signUp.php">Sign Up</a></li>
+                <li class="hover:text-[#e3d9d9]"><a href="login.php">Log In</a></li>
+                <li class="hover:text-[#e3d9d9]"><a href="about_us.php">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="flex justify-center items-center min-h-screen">
+        <div class="bg-[#ffff] p-4 rounded-xl ">
+            <form action="../backend/sign_info.php" method="post" class="flex flex-col gap-4">
+                <h1 class="text-center font-medium text-4xl md:text-5xl lg:text-6xl">Sign Up</h1>
+                <div class="flex flex-col ">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="border p-2 rounded" placeholder="Enter your email" required>
+                </div>
+                <div class="flex flex-col ">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="border p-2 rounded" placeholder="Enter your username"
+                        required>
+                </div>
+                <div class="flex flex-col ">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="border p-2 rounded" placeholder="Enter your password"
+                        required>
+                </div>
+                <input type="submit" id="submit_btn" class="bg-blue-600 rounded p-2 text-white" value="Submit">
+            </form>
+            <div class="text-center mt-4">
+                <p>
+                    Already registered?<span class="text-blue-700 underline"><a href="login.php">Login your account</a></span>
+                </p>
+            </div>
+        </div>
+
+        
+        
+        
+<div id="signupPopup" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+  <div class="bg-white p-6 rounded-xl w-[90%] max-w-md text-center">
+    <h2 class="text-green-600 text-2xl font-bold mb-3">Signup Successful ✅</h2>
+    <p>Your account has been created successfully!</p>
+    <p class="mt-2">Redirecting to login...</p>
+  </div>
+</div>
+
+    </section>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
