@@ -9,6 +9,6 @@
         die("something is wrong");
     }
     else{
-        echo "successful";
+        echo "";
     }
 ?>
