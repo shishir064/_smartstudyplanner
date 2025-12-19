@@ -1,19 +1,26 @@
 <?php
-    include 'db_connect.php';
+include 'db_connect.php';
 
-    $email = $_POST['email'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    $sql = "INSERT INTO signup_info(email,username,password) VALUES ('$email','$username','$password')";
 
-    if(mysqli_query($conn,$sql)){
-        
-        header("Location: ../src/login.php");
-        exit();
-    }
-    else{
-        echo "something is wrong try again...";
-    }
-    
+if (empty($username) || empty($email) || empty($password)) {
+    die("All fields are required");
+}
+
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+
+$sql = "INSERT INTO signup_info (user_name,email, password) VALUES (?, ?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sss", $username,$email, $hashedPassword);
+
+if ($stmt->execute()) {
+    header("Location: ../src/login.html");
+    exit();
+} else {
+    die("Something went wrong. Try again.");
+}
 ?>

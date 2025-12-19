@@ -9,7 +9,7 @@ $created_at = $_POST['created_at'] ?? '';
 $sql = "INSERT INTO tasks(task_title,task_description,categoty,created_at) VALUES ('$task_til','$task_dis','$categoty','$created_at')";
 
 if(mysqli_query($conn,$sql)){
-    header("location: ../src/add_task.php");
+    header("location: ../src/mytask.php");
 }
 else{
     echo"something is wrong";

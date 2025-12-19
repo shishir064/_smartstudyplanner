@@ -16,5 +16,5 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-header("Location: ../src/add_task.php");
+header("Location: ../src/dashboard.php");
 exit;

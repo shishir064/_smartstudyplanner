@@ -16,11 +16,14 @@
                 <a href="#home"> Smart Study Planner</a>
             </h1>
 
-            <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
-                <li class="hover:text-[#e3d9d9]"><a href="signUp.php">Sign Up</a></li>
-                <li class="hover:text-[#e3d9d9]"><a href="login.php">Log In</a></li>
-                <li class="hover:text-[#e3d9d9]"><a href="about_us.php">About</a></li>
-            </ul>
+           <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
+        <li class="hover:text-[#e3d9d9]"><a href="home.html">Home</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="about_us.html">About</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="contact.html">Contact Us</a></li>
+        <button>
+          <i class="ri-moon-fill"></i>
+        </button>
+      </ul>
         </nav>
     </header>
 
@@ -29,12 +32,12 @@
             <form action="../backend/sign_info.php" method="post" class="flex flex-col gap-4">
                 <h1 class="text-center font-medium text-4xl md:text-5xl lg:text-6xl">Sign Up</h1>
                 <div class="flex flex-col ">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="border p-2 rounded" placeholder="Enter your email" required>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="border p-2 rounded" placeholder="Enter your username" required>
                 </div>
                 <div class="flex flex-col ">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" class="border p-2 rounded" placeholder="Enter your username"
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="border p-2 rounded" placeholder="Enter your email"
                         required>
                 </div>
                 <div class="flex flex-col ">
@@ -46,7 +49,7 @@
             </form>
             <div class="text-center mt-4">
                 <p>
-                    Already registered?<span class="text-blue-700 underline"><a href="login.php">Login your account</a></span>
+                    Already registered?<span class="text-blue-700 underline"><a href="login.html">Login your account</a></span>
                 </p>
             </div>
         </div>
