@@ -2,7 +2,6 @@
 include 'db_connect.php';
 
 
-
 $username = $_POST['username'];
 
 $sql = "SELECT user_id FROM signup_info WHERE user_name = ?";

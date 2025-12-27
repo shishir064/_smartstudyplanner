@@ -42,9 +42,6 @@ $pendingTasks = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM tasks WHERE 
               <?= $completed ? 'bg-gray-100 opacity-70' : 'bg-[#F7FAFF]' ?>">
 
             
-              
-
-              
               <div class="flex-1">
                 <h3 class="font-semibold <?= $completed ? 'line-through text-gray-400' : '' ?>">
                   <?= htmlspecialchars($row['task_title']) ?>

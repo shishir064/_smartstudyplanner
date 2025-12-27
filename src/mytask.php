@@ -161,7 +161,7 @@ $result = mysqli_query($conn, "SELECT * FROM tasks ORDER BY id DESC");?>
         <form action="../backend/tasks.php" method="POST">
           <div class="space-y-2">
               <label for="taskTitle" class="text-sm font-medium"
-                >Task Title *</label
+                >Topic *</label
               >
               <input type="text" name="task_title" id="taskTitle" required
                 class="w-full px-3 py-2 rounded-lg border border-input bg-[#F7FAFF] focus:outline-none"
@@ -222,14 +222,14 @@ $result = mysqli_query($conn, "SELECT * FROM tasks ORDER BY id DESC");?>
     <form action="../backend/update_task.php" method="POST">
       <input type="hidden" name="task_id" id="edit_id">
 
-      <input id="edit_title" name="task_title"
-        class="w-full mb-3 px-3 py-2 border rounded-lg" required>
+      Topic *<input id="edit_title" name="task_title" placeholder="Edit your topic" 
+        class="w-full mb-3 px-3 py-2 border rounded-lg bg-[#F7FAFF]" required>
 
-      <textarea id="edit_description" name="task_dis"
-        class="w-full mb-3 px-3 py-2 border rounded-lg"></textarea>
+      Description *<textarea id="edit_description" name="task_dis" placeholder="Edit your details"
+        class="w-full mb-3 px-3 py-2 border rounded-lg bg-[#F7FAFF]"></textarea>
 
-      <input id="edit_category" name="categoty"
-        class="w-full mb-4 px-3 py-2 border rounded-lg">
+      Subject *<input id="edit_category" name="categoty" placeholder="Edit your subject"
+        class="w-full mb-4 px-3 py-2 border rounded-lg bg-[#F7FAFF]">
 
       <div class="flex justify-end gap-3">
         <button type="button" onclick="closeEditModal()"

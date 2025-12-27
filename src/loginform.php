@@ -10,21 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body class="bg-[#dee0dc] text-[#0B132B] overflow-x-hidden overflow-y-hidden ">
+<body class="bg-[#dee0dc] text-[#0B132B]   ">
     <header class="bg-[#3a86ff] text-white ">
-    <nav class="flex container mx-auto justify-between items-center px-6 py-4 ">
-      <h1 class=" text-1xl md:text-3x1
-      lg:text-4xl font-bold">
-        <a href="./home.html"> Smart Study Planner</a>
-      </h1>
+        <nav class="flex container mx-auto justify-between items-center px-6 py-4 ">
+            <h1 class=" text-1xl md:text-3x1 lg:text-4xl font-bold">
+                <a href="./home.html"> Smart Study Planner</a>
+            </h1>
 
-      <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
-        <li class="hover:text-[#e3d9d9]"><a href="signUp.html">Sign Up</a></li>
-        <li class="hover:text-[#e3d9d9]"><a href="login.html">Log In</a></li>
+           <ul class="hidden text-3x1 sm:visible md:visible gap-6 md:text-1xl lg:text-[2rem] lg:gap-9  md:flex">
+        <li class="hover:text-[#e3d9d9]"><a href="home.html">Home</a></li>
         <li class="hover:text-[#e3d9d9]"><a href="about_us.html">About</a></li>
+        <li class="hover:text-[#e3d9d9]"><a href="contact.html">Contact Us</a></li>
       </ul>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
   <section class="flex flex-col justify-center items-center min-h-screen ">
     <div class=" bg-[#ffff] rounded-xl p-4 w-full max-w-sm">
@@ -47,6 +46,10 @@
         </div>
     </div>
   </section>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+      <p>© 2025 Smart Study Planner | All Rights Reserved</p>
+  </footer>
   
 </body>
 
